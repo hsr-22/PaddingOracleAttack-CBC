@@ -1,2 +1,11 @@
 /Untitled-2024-09-09-2302.excalidraw
 /__pycache__
+
+# Ignore LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
