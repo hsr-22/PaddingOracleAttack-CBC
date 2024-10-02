@@ -5,6 +5,7 @@
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
+\graphicspath{{../images/}}
 \usepackage{textcomp}
 \usepackage{xcolor}
 \usepackage{svg}
@@ -93,7 +94,7 @@ where \(P_n\) is the plaintext block, \(C_n\) is the ciphertext block, \(E()\) i
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{./../CBC_encryption.png}
+    \includegraphics[width=0.5\textwidth]{CBC_encryption.png}
     \caption{Cipher Block Chaining (CBC) Mode Encryption}
     \label{fig:enter-label}
 \end{figure}
@@ -112,7 +113,7 @@ This chaining process ensures that even small changes in the ciphertext propagat
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.5\textwidth]{./../CBC_decryption.png}
+    \includegraphics[width=0.5\textwidth]{CBC_decryption.png}
     \caption{Cipher Block Chaining (CBC) Mode Decryption}
     \label{fig:enter-label}
 \end{figure}
@@ -130,7 +131,7 @@ When decrypting, the value of the last byte indicates how many padding bytes wer
 
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=\linewidth]{./../padding.png}
+    \includegraphics[width=\linewidth]{padding.png}
     \caption{Illustration of the PKCS \#7 Padding Scheme}
     \label{fig:padding-scheme}
 \end{figure}
@@ -149,7 +150,7 @@ A Padding Oracle functions as a blackbox that receives an encrypted message as i
 This seemingly simple feedback can be exploited by attackers to iteratively modify the ciphertext and extract information about the plaintext or the decryption key, making padding oracles a critical vulnerability in improperly secured systems.
 \begin{figure}[!htb]
     \centering
-    \includegraphics[width=0.8\linewidth]{./../oracle.png}
+    \includegraphics[width=0.8\linewidth]{oracle.png}
     \caption{The Oracle Block}
     \label{fig:oracle}
 \end{figure}
