@@ -11,3 +11,6 @@
 *.toc
 *.fls
 *.fdb_latexmk
+Report/report.fdb_latexmk
+Report/report.fls
+padding
